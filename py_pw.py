@@ -12,7 +12,7 @@ character_list = upper_case + lower_case + other
 random.shuffle(character_list)
 pw = []
 pw_length = int(input("Enter desired password length, e.g. 12 for 12 characters: "))
-# for loop to adhere to desired password length
+# loop to adhere to desired password length
 for char in range(pw_length):
     pw.append(random.choice(character_list))
 print(''.join(pw))

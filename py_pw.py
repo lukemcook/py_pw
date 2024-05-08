@@ -15,7 +15,7 @@ pw_length = int(input("Enter desired password length, e.g. 12 for 12 characters:
 # loop to adhere to desired password length
 for char in range(pw_length):
     pw.append(random.choice(character_list))
-print(''.join(pw))
+print(f"Your generated password is: {''.join(pw)}")
 # pyperclip copies password to clipboard
 pyperclip.copy(''.join(pw))
-print("Password copied to clipboard")
+print(f"Copied {''.join(pw)} to clipboard")

@@ -7,7 +7,8 @@ upper_case = list(string.ascii_uppercase)
 lower_case = list(string.ascii_lowercase)
 other = "@*&#%^()-+="
 other = list(other)
-character_list = upper_case + lower_case + other
+digits = list(string.digits)
+character_list = upper_case + lower_case + other + digits
 # ask for password length and assign characters randomly
 random.shuffle(character_list)
 pw = []

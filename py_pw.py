@@ -28,7 +28,7 @@ while True:
         pyperclip.copy(''.join(pw))
         print(f"Copied {''.join(pw)} to clipboard")
         break
-# except catches input error and updates failed attempts
+# except catches input errors and updates failed attempts
     except ValueError:
         attempts += 1
         if attempts >= 3:
